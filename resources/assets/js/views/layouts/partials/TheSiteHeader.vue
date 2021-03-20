@@ -6,18 +6,7 @@
       href="/admin/dashboard"
       class="float-none text-lg not-italic font-black tracking-wider text-white brand-main md:float-left font-base"
     >
-      <img
-        id="logo-white"
-        src="/assets/img/logo-white.png"
-        alt="Crater Logo"
-        class="hidden h-6 md:block"
-      />
-      <img
-        id="logo-mobile"
-        src="/assets/img/crater-white-small.png"
-        alt="Crater Logo"
-        class="block h-8 md:hidden"
-      />
+      <h2>Kartenglück & Co | Office</h2>
     </a>
 
     <ul class="float-right h-8 m-0 list-none md:h-9">
