@@ -1099,12 +1099,12 @@
     }
   },
   "layout_login": {
-    "copyright_crater": "Copyright @ Crater - 2020",
-    "super_simple_invoicing": "Super einfache Buchhaltung",
-    "for_freelancer": "für Freelancers &",
-    "small_businesses": "kleine Unternehmen",
-    "crater_help": "Crater hilft dir eine wunderschönen Überblick über deine Buchhaltung zuhaben.",
-    "invoices_and_estimates": "Die Möglichkeit mehrere Versionen von Rechnungen und Kosten zuerstellen."
+    "copyright_crater": "Copyright @ Kartenglück & Co - 2021",
+    "super_simple_invoicing": "Office",
+    "for_freelancer": "",
+    "small_businesses": "",
+    "crater_help": "",
+    "invoices_and_estimates": ""
   },
   "validation": {
     "invalid_phone": "Ungültige Telefonnummer",

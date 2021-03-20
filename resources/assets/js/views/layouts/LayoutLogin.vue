@@ -5,11 +5,7 @@
     >
       <div class="w-full">
         <a href="/admin">
-          <img
-            src="/assets/img/crater-logo.png"
-            class="block w-48 h-auto max-w-full mb-32 text-primary-400"
-            alt="Crater Logo"
-          />
+          <h2 style="font-size: 35px; margin-bottom: 30px; color: #FBB2D3;">Kartenglück & Co</h2>
         </a>
         <router-view></router-view>
         <div
