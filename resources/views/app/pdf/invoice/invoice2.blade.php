@@ -38,16 +38,16 @@
         }
 
         .header-section-left {
-            padding-top: 45px;
+            padding-top: 25px;
             padding-bottom: 45px;
             padding-left: 30px;
             display: inline-block;
-            width: 30%;
+            width: 50%;
         }
 
         .header-logo {
             position: absolute;
-            height: 50px;
+            height: 100px;
             text-transform: capitalize;
             color: #fff;
         }
@@ -137,7 +137,7 @@
             display: block;
             /* position: absolute; */
             float: right;
-            padding: 0 40px 0 0;
+            padding: 0 80px 0 0;
         }
 
         .billing-address-label {
@@ -202,7 +202,7 @@
         /* -- Items Table -- */
 
         .items-table {
-            margin-top: 35px;
+            margin-top: 150px;
             padding: 0px 30px 10px 30px;
             page-break-before: avoid;
             page-break-after: auto;
@@ -380,16 +380,16 @@
         <table width="100%">
             <tr>
                 @if($logo)
-                <td width="60%" class="header-section-left">
+                <td width="80%" class="header-section-left">
                     <img class="header-logo" src="{{ $logo }}" alt="Company Logo">
                     @else
-                <td width="60%" class="header-section-left" style="padding-top: 0px;">
+                <td width="80%" class="header-section-left">
                     @if($invoice->user->company)
                     <h1 class="header-logo"> {{$invoice->user->company->name}} </h1>
                     @endif
                     @endif
                 </td>
-                <td width="40%" class="header-section-right invoice-details-container">
+                <td width="20%" class="header-section-right invoice-details-container">
                     <h1>@lang('pdf_invoice_label')</h1>
                     <h4>{{$invoice->invoice_number}}</h4>
                     <h4>{{$invoice->formattedInvoiceDate}}</h4>
@@ -401,39 +401,28 @@
     <div class="content-wrapper">
         <div class="address-container">
             <div class="company-address-container company-address">
+                
                 {!! $company_address !!}
             </div>
-            @if($shipping_address !== '</br>')
-                <div class="shipping-address-container shipping-address">
-                    @if($shipping_address)
-                        @lang('pdf_ship_to')
-                        {!! $shipping_address !!}
-                    @endif
-                </div>
-            @endif
-            @if($shipping_address !== '</br>')
-            <div class="billing-address-container billing-address">
-                @else
-                <div class="billing-address-container billing-address" style="float:right; margin-right:30px;">
-                    @endif
-                    @if($billing_address)
-                        @lang('pdf_bill_to')
-                        {!! $billing_address !!}
-                    @endif
-                </div>
-                <div style="clear: both;"></div>
-            </div>
-            @include('app.pdf.invoice.partials.table')
-            {{-- @include('app.pdf.invoice.partials.notes') --}}
-            <div class="notes">
-                @if($notes)
-                    <div class="notes-label">
-                        @lang('pdf_notes')
-                    </div>
-                    {!! $notes !!}
+            <div class="billing-address-container billing-address" style="float:right; margin-right:80px;">
+                @if($billing_address)
+                    @lang('pdf_bill_to')
+                    {!! $billing_address !!}
                 @endif
             </div>
+            <div style="clear: both;"></div>
         </div>
+        @include('app.pdf.invoice.partials.table')
+        {{-- @include('app.pdf.invoice.partials.notes') --}}
+        <div class="notes">
+            @if($notes)
+                <div class="notes-label">
+                    @lang('pdf_notes')
+                </div>
+                {!! $notes !!}
+            @endif
+        </div>
+    </div>
 </body>
 
 </html>

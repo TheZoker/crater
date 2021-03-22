@@ -32,7 +32,7 @@
         .header-bottom-divider {
             color: rgba(0, 0, 0, 0.2);
             position: absolute;
-            top: 90px;
+            top: 120px;
             left: 0px;
             width: 100%;
         }
@@ -40,13 +40,13 @@
         .header-container {
             position: absolute;
             width: 100%;
-            height: 90px;
+            height: 120px;
             left: 0px;
             top: -50px;
         }
 
         .header-logo {
-            height: 50px;
+            height: 80px;
             margin-top: 20px;
             text-transform: capitalize;
             color: #FA9FC8;
@@ -59,7 +59,7 @@
 
         .content-wrapper {
             display: block;
-            margin-top: 0px;
+            margin-top: 20px;
             padding-top: 16px;
             padding-bottom: 20px;
         }
@@ -380,12 +380,6 @@
             @endif
         </div>
 
-        <div class="shipping-address-container shipping-address" @if($billing_address !== '</br>') style="float:left;" @else style="display:block; float:left: padding-left: 0px;" @endif>
-            @if($shipping_address)
-                @lang('pdf_ship_to')
-                {!! $shipping_address !!}
-            @endif
-        </div>
         <div style="position: relative; clear: both;">
             @include('app.pdf.invoice.partials.table')
         </div>
