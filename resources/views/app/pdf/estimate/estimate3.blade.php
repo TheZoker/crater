@@ -37,7 +37,7 @@
         .header-logo {
             height: 50px;
             text-transform: capitalize;
-            color: #817AE3;
+            color: #FA9FC8;
             padding-top: 0px;
         }
 

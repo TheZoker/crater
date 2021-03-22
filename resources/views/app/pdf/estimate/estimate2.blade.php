@@ -28,7 +28,7 @@
         /* -- Header -- */
 
         .header-container {
-            background: #817AE3;
+            background: #FA9FC8;
             position: absolute;
             width: 100%;
             height: 141px;
