@@ -74,6 +74,7 @@ export default {
             { label: 'Email', value: 'CONTACT_EMAIL' },
             { label: 'Phone', value: 'CONTACT_PHONE' },
             { label: 'Website', value: 'CONTACT_WEBSITE' },
+            { label: 'VAT', value: 'CUSTOMER_VAT' },
           ],
         },
         {
@@ -99,6 +100,7 @@ export default {
             { label: 'Email', value: 'CONTACT_EMAIL' },
             { label: 'Phone', value: 'CONTACT_PHONE' },
             { label: 'Website', value: 'CONTACT_WEBSITE' },
+            { label: 'VAT', value: 'CUSTOMER_VAT' },
           ],
         },
         {
@@ -120,6 +122,7 @@ export default {
           label: 'Company Address',
           fields: [
             { label: 'Company Name', value: 'COMPANY_NAME' },
+            { label: 'Company VAT', value: 'COMPANY_VAT' },
             { label: 'Address street 1', value: 'COMPANY_ADDRESS_STREET_1' },
             { label: 'Address Street 2', value: 'COMPANY_ADDRESS_STREET_2' },
             { label: 'Country', value: 'COMPANY_COUNTRY' },

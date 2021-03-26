@@ -153,6 +153,7 @@
     "address": "Adresse",
     "phone": "Telefon",
     "website": "Webseite",
+    "vat": "Steuernummer",
     "overview": "Übersicht",
     "enable_portal": "Kunden-Portal aktivieren",
     "country": "Land",
@@ -671,6 +672,7 @@
     "company_info": {
       "company_info": "Firmeninfo",
       "company_name": "Name des Unternehmens",
+      "company_vat": "Steuernummer",
       "company_logo": "Firmenlogo",
       "section_description": "Informationen zu Ihrem Unternehmen, die auf Rechnungen, Kostenvoranschlägen und anderen von Crater erstellten Dokumenten angezeigt werden.",
       "phone": "Telefon",

@@ -192,6 +192,7 @@ export default {
               { label: 'Email', value: 'CONTACT_EMAIL' },
               { label: 'Phone', value: 'CONTACT_PHONE' },
               { label: 'Website', value: 'CONTACT_WEBSITE' },
+              { label: 'VAT Number', value: 'CUSTOMER_VAT' },
               ...this.customerFields.map((i) => ({
                 label: i.label,
                 value: i.slug,
@@ -256,6 +257,7 @@ export default {
             label: 'Company',
             fields: [
               { label: 'Company Name', value: 'COMPANY_NAME' },
+              { label: 'VAT Number', value: 'COMPANY_VAT' },
               { label: 'Country', value: 'COMPANY_COUNTRY' },
               { label: 'State', value: 'COMPANY_STATE' },
               { label: 'City', value: 'COMPANY_CITY' },
