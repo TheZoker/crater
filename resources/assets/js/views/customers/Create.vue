@@ -141,6 +141,17 @@
                 @input="$v.formData.website.$touch()"
               />
             </sw-input-group>
+
+            <sw-input-group
+              :label="$t('customers.vat')"
+              class="md:col-span-3"
+            >
+              <sw-input
+                v-model="formData.vat"
+                type="text"
+                tabindex="6"
+              />
+            </sw-input-group>
           </div>
         </div>
 
@@ -479,6 +490,7 @@ export default {
         phone: null,
         currency_id: null,
         website: null,
+        vat: null,
         addresses: [],
       },
       currency: null,

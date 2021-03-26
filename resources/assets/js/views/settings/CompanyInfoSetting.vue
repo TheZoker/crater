@@ -71,6 +71,17 @@
           />
         </sw-input-group>
 
+        <sw-input-group
+          :label="$tc('settings.company_info.company_vat')"
+          required
+        >
+          <sw-input
+            v-model="formData.vat"
+            :placeholder="$t('settings.company_info.company_vat')"
+            class="mt-2"
+          />
+        </sw-input-group>
+
         <sw-input-group :label="$tc('settings.company_info.phone')">
           <sw-input
             v-model="formData.phone"
@@ -180,6 +191,7 @@ export default {
       formData: {
         name: null,
         email: '',
+        vat: '',
         phone: '',
         zip: '',
         address_street_1: '',
@@ -287,6 +299,7 @@ export default {
       this.isFetchingData = true
       if (response.data.user) {
         this.formData.name = response.data.user.company.name
+        this.formData.vat = response.data.user.company.vat
         this.formData.address_street_1 =
           response.data.user.company.address.address_street_1
         this.formData.address_street_2 =

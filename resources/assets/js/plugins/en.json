@@ -154,6 +154,7 @@
     "address": "Address",
     "phone": "Phone",
     "website": "Website",
+    "vat": "VAT Number",
     "overview": "Overview",
     "enable_portal": "Enable Portal",
     "country": "Country",
@@ -672,6 +673,7 @@
     "company_info": {
       "company_info": "Company info",
       "company_name": "Company Name",
+      "company_vat": "Company VAT",
       "company_logo": "Company Logo",
       "section_description": "Information about your company that will be displayed on invoices, estimates and other documents created by Crater.",
       "phone": "Phone",
